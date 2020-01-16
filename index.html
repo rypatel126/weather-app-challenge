@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Example</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <section class="container">
+        <div class="left">
+          <h1>Weather Finder</h1>
+          <p>Find out the temperature, weather conditions and more...</p>
+        </div>
+        <div class="right">
+          <h1>This is the right side of the screen</h1>
+          <form action="api.openweathermap.org/data/2.5/weather?q=`${city name}`" method="get">
+           <ul>
+            <li>
+              <label for="name">City:</label>
+              <input type="text" id="city" name="city_name" />
+            </li>
+            <li>
+              <label for="mail">Country:</label>
+              <input type="text" id="country" name="country_name" />
+            </li>
+            <li class="button">
+              <button type="submit">Get weather</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </body>
+</html>
